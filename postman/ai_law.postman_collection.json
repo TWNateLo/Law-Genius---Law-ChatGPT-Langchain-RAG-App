@@ -1,0 +1,61 @@
+{
+	"info": {
+		"_postman_id": "c3e2e62e-073e-4a89-9df1-ac730da9e5de",
+		"name": "ai_law",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19466641"
+	},
+	"item": [
+		{
+			"name": "test",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "query_database",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/database/qs?question=我在廁所被偷窺，偷看應付什麼責任&session_id=Ku123",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"database",
+						"qs"
+					],
+					"query": [
+						{
+							"key": "question",
+							"value": "我在廁所被偷窺，偷看應付什麼責任"
+						},
+						{
+							"key": "session_id",
+							"value": "Ku123"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
